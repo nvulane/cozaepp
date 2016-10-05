@@ -5,12 +5,15 @@
       <domain:create xmlns:domain="urn:ietf:params:xml:ns:domain-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:domain-1.0 domain-1.0.xsd">
       <domain:name><%= domainName %></domain:name>
         <domain:ns>
-        <domain:hostObj><%= nsHostname1 %></domain:hostObj>
-        <domain:hostObj><%= nsHostname2 %></domain:hostObj>
+			<domain:hostObj><%= nsHostname1 %></domain:hostObj>
+			<domain:hostObj><%= nsHostname2 %></domain:hostObj>
         </domain:ns>
         <domain:registrant><%= registrant %></domain:registrant>
+		<domain:contact type="admin"><%= administrator %></domain:contact>
+		<domain:contact type="tech"><%= technical %></domain:contact>
+		<domain:contact type="billing"><%= billing %></domain:contact>
         <domain:authInfo>
-        <domain:pw><%= domainSecret %></domain:pw>
+			<domain:pw><%= domainSecret %></domain:pw>
         </domain:authInfo>
       </domain:create>
     </create>

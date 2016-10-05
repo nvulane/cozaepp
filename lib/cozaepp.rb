@@ -399,6 +399,9 @@ module CozaEPP
 
         def create_domain(domainName,
                           registrant,
+						  administrator,
+						  technical,
+						  billing,
                           hosts,
                           domainSecret
                          )
@@ -420,6 +423,9 @@ module CozaEPP
 
         def create_domain_with_ns(domainName,
                                   registrant,
+								  administrator,
+								  technical,
+								  billing,
                                   nsHostname1,
                                   nsHostname2,
                                   domainSecret
@@ -441,6 +447,9 @@ module CozaEPP
 
         def create_domain_with_host(domainName,
                                     registrant,
+									administrator,
+									technical,
+									billing,
                                     nsHostname1,
                                     nsipv4Address1,
                                     nsipv6Address1,

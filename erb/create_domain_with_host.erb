@@ -15,6 +15,9 @@
             </domain:hostAttr>
         </domain:ns>
         <domain:registrant><%= registrant %></domain:registrant>
+		<domain:contact type="admin"><%= administrator %></domain:contact>
+		<domain:contact type="tech"><%= technical %></domain:contact>
+		<domain:contact type="billing"><%= billing %></domain:contact>
         <domain:authInfo>
         <domain:pw><%= domainSecret %></domain:pw>
         </domain:authInfo>
