@@ -229,7 +229,7 @@ module CozaEPP
             end
         end
 
-        def update_domain_registrant(domainName,registrant)
+        def update_domain_registrant(domainName,registrant,administrator,technical,billing)
             begin
                 cltrid = gen_cltrid
                 xml = ERB.new(File.read(@gemRoot + "/erb/update_domain_registrant.erb")).result(binding)
